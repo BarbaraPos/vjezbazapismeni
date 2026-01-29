@@ -26,7 +26,7 @@ namespace vjezbazapismeni
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] dijelovi = line.Split(',');
-                    if (dijelovi[0]==kriterij || dijelovi[1]==kriterij)
+                    if (string.Equals(dijelovi[0], kriterij)==true || string.Equals(dijelovi[1],kriterij)==true)
                     {
                         knjige.Add(line);
                     }
@@ -49,6 +49,51 @@ namespace vjezbazapismeni
                 sr.Close();
             }
             return knjige;
+        }
+        public static List<string> GetCountByGenre()
+        {
+            List<string> zanrovi = new List<string>();
+            int zf = 0, ljub = 0, akc = 0, pust = 0;
+            if (File.Exists("knjige.txt"))
+            {
+                
+                StreamReader sr = new StreamReader("knjige.txt");
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    string[] dijelovi = line.Split(',');
+                    string zanr = dijelovi[3];
+                    if (zanr == "Znanstvena fantastika")
+                    {
+                        zf++;
+                    }
+                    else if (zanr == "Ljubavni")
+                    {
+                        ljub++;
+                    }
+                    else if (zanr == "Akcijski")
+                    {
+                        akc++;
+                    }
+                    else if (zanr == "Pustolovni")
+                    {
+                        pust++;
+                    }
+                }
+
+            }
+            ljub.ToString();
+            akc.ToString();
+            pust.ToString();
+            zf.ToString();
+
+            zanrovi.Add("Znanstvena fantastika: "+zf);
+            zanrovi.Add("Ljubavni: " + ljub);
+            zanrovi.Add("Akcijski: " + akc);
+            zanrovi.Add("Pustolovni: " + pust);
+
+
+            return zanrovi;
         }
     }
    

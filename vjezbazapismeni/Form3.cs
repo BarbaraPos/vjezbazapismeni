@@ -46,5 +46,10 @@ namespace vjezbazapismeni
         {
             this.Close();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

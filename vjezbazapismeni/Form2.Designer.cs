@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNaslov = new System.Windows.Forms.TextBox();
-            this.txtAutor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.godina = new System.Windows.Forms.DateTimePicker();
             this.cbZanr = new System.Windows.Forms.ComboBox();
+            this.godina = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtNaslov = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.brStr = new System.Windows.Forms.NumericUpDown();
             this.dostupnost = new System.Windows.Forms.CheckBox();
+            this.brStr = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -65,63 +65,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Podaci o knjizi";
             // 
-            // txtNaslov
-            // 
-            this.txtNaslov.Location = new System.Drawing.Point(92, 53);
-            this.txtNaslov.Name = "txtNaslov";
-            this.txtNaslov.Size = new System.Drawing.Size(100, 20);
-            this.txtNaslov.TabIndex = 0;
-            // 
-            // txtAutor
-            // 
-            this.txtAutor.Location = new System.Drawing.Point(92, 95);
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(100, 20);
-            this.txtAutor.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Naslov:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "godina izdavanja:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Autor:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 194);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "žanr:";
-            // 
-            // godina
-            // 
-            this.godina.Location = new System.Drawing.Point(35, 164);
-            this.godina.Name = "godina";
-            this.godina.Size = new System.Drawing.Size(200, 20);
-            this.godina.TabIndex = 6;
-            // 
             // cbZanr
             // 
             this.cbZanr.FormattingEnabled = true;
@@ -135,6 +78,63 @@
             this.cbZanr.Size = new System.Drawing.Size(121, 21);
             this.cbZanr.TabIndex = 7;
             // 
+            // godina
+            // 
+            this.godina.Location = new System.Drawing.Point(35, 164);
+            this.godina.Name = "godina";
+            this.godina.Size = new System.Drawing.Size(200, 20);
+            this.godina.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 194);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "žanr:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Autor:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "godina izdavanja:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Naslov:";
+            // 
+            // txtAutor
+            // 
+            this.txtAutor.Location = new System.Drawing.Point(92, 95);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(100, 20);
+            this.txtAutor.TabIndex = 1;
+            // 
+            // txtNaslov
+            // 
+            this.txtNaslov.Location = new System.Drawing.Point(92, 53);
+            this.txtNaslov.Name = "txtNaslov";
+            this.txtNaslov.Size = new System.Drawing.Size(100, 20);
+            this.txtNaslov.TabIndex = 0;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dostupnost);
@@ -147,22 +147,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dodatni podaci";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "broj stranica:";
-            // 
-            // brStr
-            // 
-            this.brStr.Location = new System.Drawing.Point(29, 82);
-            this.brStr.Name = "brStr";
-            this.brStr.Size = new System.Drawing.Size(120, 20);
-            this.brStr.TabIndex = 1;
-            // 
             // dostupnost
             // 
             this.dostupnost.AutoSize = true;
@@ -172,6 +156,22 @@
             this.dostupnost.TabIndex = 2;
             this.dostupnost.Text = "Dostupna za posudbu";
             this.dostupnost.UseVisualStyleBackColor = true;
+            // 
+            // brStr
+            // 
+            this.brStr.Location = new System.Drawing.Point(29, 82);
+            this.brStr.Name = "brStr";
+            this.brStr.Size = new System.Drawing.Size(120, 20);
+            this.brStr.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(26, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "broj stranica:";
             // 
             // button1
             // 
@@ -204,6 +204,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2";
             this.Text = "Unos knjige";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
