@@ -62,7 +62,7 @@ namespace vjezbazapismeni
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] dijelovi = line.Split(',');
-                    string zanr = dijelovi[3];
+                    string zanr = dijelovi[5].Trim();
                     if (zanr == "Znanstvena fantastika")
                     {
                         zf++;
